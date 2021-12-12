@@ -1,0 +1,14 @@
+@media screen and (max-width: 350px) {
+    .home .typing{
+        font-size: 1.8em;
+    }
+    .home #space{
+        margin-top: 50px;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .home #space #rocket{
+        width: 200px;
+    }
+  }

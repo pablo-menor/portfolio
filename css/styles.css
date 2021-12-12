@@ -1,9 +1,13 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background-color: #424242;
+}
 nav{
     height: 10vh;
     background-color: #161716;
@@ -12,6 +16,7 @@ nav{
     align-items: center;
 }
 
+/***********NAVIGATION***********/
 nav .nav-wrap{
     height: 60%;
     width: 90%;
@@ -23,6 +28,17 @@ nav .nav-wrap{
 }
 nav .nav-wrap #sections{
     display: none;
+}
+nav .nav-wrap #logo{
+    color: #00B567;
+    font-family: monospace;
+    font-size: 1em;
+    letter-spacing: 3px;
+}
+nav .nav-wrap .menu{
+    color: rgb(212, 212, 212);
+    font-size: 2.3rem;
+    z-index: 6;
 }
 .menu-phone{
     width: 100vw;
@@ -47,7 +63,6 @@ nav .nav-wrap #sections{
     align-items: center;
     text-align: center;
     height: fit-content;
-   
     
 }
 
@@ -70,3 +85,94 @@ nav .nav-wrap #sections{
     -webkit-clip-path:  circle(1000px at 100% -2%);
 
 }
+
+/***********HOME***********/
+.home{
+
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home #greeting{
+    color: #a5a4a4;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+.home .typing{
+position: relative;
+margin-top: 15px;
+/* color: #b1a500; */
+/* color: #7cb100; */
+color: #00B567;
+font-family: 'Poppins', sans-serif;
+font-size: 2.1em;
+text-shadow: 0 0 10px  #1f1f1f
+}
+
+.home .typing::after{
+    content: "";
+    position: absolute;
+    right: -5px;
+    height: 100%;
+    border-right: 2px solid #fff; 
+    animation: type 1s infinite ease;
+}
+
+@keyframes type {
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.home #space{
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    background-color:#161716;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.home #space #rocket{
+    width: 230px;
+    animation: fly 2.5s infinite;
+}
+
+@keyframes fly {
+    50%{
+        transform: translateY(-12%);
+    }
+} 
+
+.home .project-idea{
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #a5a4a4;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.home .go-to-contact{
+    background-color: #00B567;
+    padding: 15px;
+    font-family: monospace;
+    font-size: 1.3em;
+    border-radius: 3px;
+    letter-spacing: 1.3px;
+}
+.home .go-to-contact a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
