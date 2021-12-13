@@ -15,6 +15,12 @@ nav{
     justify-content: center;
     align-items: center;
 }
+.title{
+    font-size: 1.7em;
+    font-family: monospace;
+    color: #a5a4a4;
+    letter-spacing: 6px;
+}
 
 /***********NAVIGATION***********/
 nav .nav-wrap{
@@ -25,6 +31,7 @@ nav .nav-wrap{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+   
 }
 nav .nav-wrap #sections{
     display: none;
@@ -108,7 +115,7 @@ margin-top: 15px;
 color: #00B567;
 font-family: 'Poppins', sans-serif;
 font-size: 2.1em;
-text-shadow: 0 0 10px  #1f1f1f
+/* text-shadow: 0 0 10px  #1f1f1f */
 }
 
 .home .typing::after{
@@ -130,11 +137,10 @@ text-shadow: 0 0 10px  #1f1f1f
     }
     
 }
-
 .home #space{
     margin-top: 50px;
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     background-color:#161716;
     display: flex;
     justify-content: center;
@@ -143,7 +149,7 @@ text-shadow: 0 0 10px  #1f1f1f
 }
 
 .home #space #rocket{
-    width: 230px;
+    width: 190px;
     animation: fly 2.5s infinite;
 }
 
@@ -173,6 +179,109 @@ text-shadow: 0 0 10px  #1f1f1f
     text-decoration: none;
     color: #ffffff;
 }
+
+/***********SKILLS***********/
+
+.skills{
+    width: 90vw;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.skills .tech-panel{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tech{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tech .tech-icon{
+    font-size: 4em;
+}
+
+.html{
+    color: #FC490B;
+}
+
+.css{
+    color: #2196F3;
+}
+.js{
+    color: #F0DB4F;
+}
+
+.java{
+    width: 50%;
+}
+
+.mongo{
+    width: 60%;
+}
+
+.vue{
+    width: 50%;
+}
+
+
+.git{
+    color: #DE4C36;
+}
+
+.node{
+    color:#8CC84B;
+}
+
+.sass{
+    color: #CF649A;
+  
+}
+
+.portfolio{
+    width: 95vw;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.portfolio .projects{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.portfolio .projects .project{
+    margin: auto;
+    width: 100%;
+    background-color: rgb(105, 105, 105);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+.portfolio .projects .project p{
+    margin-bottom: 10px;
+    font-family: 'Poppins'  ;
+}
+.portfolio .projects .project a{
+    display: flex;
+     
+    justify-content: center;
+    align-items: center;
+}
+.portfolio .projects .project img{
+    width: 95%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+
+
 
 
 
