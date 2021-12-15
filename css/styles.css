@@ -7,6 +7,7 @@
 
 body{
     background-color: #424242;
+    overflow-x: hidden;
 }
 nav{
     height: 10vh;
@@ -137,7 +138,7 @@ font-size: 2.1em;
     }
     
 }
-.home #space{
+.home  #space{
     margin-top: 50px;
     width: 270px;
     height: 270px;
@@ -148,7 +149,7 @@ font-size: 2.1em;
     overflow: hidden;
 }
 
-.home #space #rocket{
+.home  #space #rocket{
     width: 190px;
     animation: fly 2.5s infinite;
 }
@@ -167,7 +168,7 @@ font-size: 2.1em;
     margin-bottom: 20px;
 }
 
-.home .go-to-contact{
+.home  .go-to-contact{
     background-color: #00B567;
     padding: 15px;
     font-family: monospace;
@@ -240,7 +241,7 @@ font-size: 2.1em;
     color: #CF649A;
   
 }
-
+/***********PROJECTS***********/
 .portfolio{
     width: 95vw;
     margin: auto;
@@ -304,6 +305,7 @@ font-size: 2.1em;
     color: #ffffff;
     font-family: 'Poppins';
     font-size: 0.9em;
+    cursor: pointer;
 }
 
 .contact .social .linkedin{
@@ -311,6 +313,7 @@ font-size: 2.1em;
     color: #006699;
     margin-top: 20px;
 }
+
 /* FOOTER */
 footer{
     height: 80px;
