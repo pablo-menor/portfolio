@@ -101,6 +101,7 @@ nav .nav-wrap .menu{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .home #greeting{
@@ -138,7 +139,7 @@ font-size: 2.1em;
     }
     
 }
-.home  #space{
+.home > div #space{
     margin-top: 50px;
     width: 270px;
     height: 270px;
@@ -149,7 +150,7 @@ font-size: 2.1em;
     overflow: hidden;
 }
 
-.home  #space #rocket{
+.home > div #space #rocket{
     width: 190px;
     animation: fly 2.5s infinite;
 }
@@ -159,24 +160,37 @@ font-size: 2.1em;
         transform: translateY(-12%);
     }
 } 
-
-.home .project-idea{
+.home > div .project-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home > div .project-contact .project-idea{
     margin-top: 30px;
     font-family: 'Poppins', sans-serif;
     color: #a5a4a4;
     font-size: 1.4em;
     margin-bottom: 20px;
 }
+.home > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.home  .go-to-contact{
+.home > div  .project-contact .go-to-contact{
+    width: fit-content;
     background-color: #00B567;
     padding: 15px;
     font-family: monospace;
     font-size: 1.3em;
     border-radius: 3px;
     letter-spacing: 1.3px;
+    
 }
-.home .go-to-contact a {
+.home  > div .project-contact .go-to-contact a {
     text-decoration: none;
     color: #ffffff;
 }
@@ -187,6 +201,7 @@ font-size: 2.1em;
     width: 90vw;
     margin: auto;
     margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 .skills .tech-panel{
@@ -246,6 +261,7 @@ font-size: 2.1em;
     width: 95vw;
     margin: auto;
     margin-top: 35px;
+    margin-bottom: 40px;
 }
 
 .portfolio .projects{

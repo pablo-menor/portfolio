@@ -152,7 +152,30 @@
     } */
     
   }
+  @media screen and (min-width: 920px) {
+  .home > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+   
+  }
+  .home  .project-contact .project-idea{
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    }
+    .home  > div #space{
+        width: 350px;
+        height: 350px;
+    }
+    
+    .home > div #space #rocket{
+        width: 230px;
+        animation: fly 2.5s infinite;
+    }
 
+}
   @media screen and (min-width: 1000px) {
     nav{
         height: 80px;
@@ -260,6 +283,17 @@
         width: 60%;
     }
   }
+  @media screen and (min-width: 1300px) {
+
+    .home > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+      }
+   
+  }
   @media screen and (min-width: 1400px) {
     .tech{
         height: 270px;
@@ -269,6 +303,10 @@
     }
     .tech .tech-icon{
         font-size: 8em;
+    }
+
+    .home > div{
+        margin-top: 90px;
     }
    
   }
