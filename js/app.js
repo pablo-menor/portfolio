@@ -93,3 +93,28 @@ email.addEventListener('click', () => {
     email.style.backgroundColor = "#00B567";
     navigator.clipboard.writeText('pablomenordeonate@gmail.com');
 })
+
+
+//----------------SLIDER (SWIPER)------------------------------
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });

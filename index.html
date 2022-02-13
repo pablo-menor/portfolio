@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Menor / Web Developer</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="./img/favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -43,97 +45,117 @@
         </ul>
 
     </div>
+    <div class="container">
+        <section class="home">
+            <p id="greeting">Hi, I'm Pablo </p>
+            <p class="typing"></p>
 
-    <section class="home">
-        <p id="greeting">Hi, I'm Pablo </p>
-        <p class="typing"></p>
+            <div>
+                <div id="space">
+                    <img id="rocket" src="./img/rocket.svg">
+                </div>
+                <div class="project-contact">
+                    <p class="project-idea"> Got a project in mind?</p>
+                    <div class="go-to-contact">
+                        <a href="#contact">CONTACT ME!</a>
+                    </div>
+                </div>
 
-        <div>
-            <div id="space">
-                <img id="rocket" src="./img/rocket.svg">
             </div>
-            <div class="project-contact">
-                <p class="project-idea"> Got a project in mind?</p>
-                <div class="go-to-contact">
-                    <a href="#contact">CONTACT ME!</a>
+
+
+
+
+        </section>
+
+        <section id="skills" class="skills">
+            <p class="title">SKILL SET</p>
+            <div class="tech-panel">
+                <div class="tech">
+                    <i class="fab fa-html5 tech-icon html"></i>
+                </div>
+                <div class="tech">
+                    <i class="fab fa-css3-alt tech-icon css"></i>
+                </div>
+                <div class="tech">
+                    <i class="fab fa-js-square tech-icon js"></i>
+                </div>
+                <div class="tech">
+                    <img src="./img/jee-3.svg" class="java" alt="">
+                </div>
+                <div class="tech">
+                    <img src="./img/mongodb-icon-1.svg" class="mongo" alt="">
+                </div>
+                <div class="tech">
+                    <img src="./img/vue-js-1.svg" class="vue" alt="">
+                </div>
+                <div class="tech">
+                    <i class="fab fa-git-alt tech-icon git"></i>
+                </div>
+                <div class="tech">
+                    <i class="fab fa-node-js tech-icon node"></i>
+                </div>
+                <div class="tech">
+                    <i class="fab fa-sass tech-icon sass"></i>
                 </div>
             </div>
-      
-        </div>
-        
- 
+        </section>
 
+        <section id="portfolio" class="portfolio">
+            <p class="title">PORTFOLIO</p>
+            <div class="projects">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <article class="project">
+                                <p>Rick & Morty WebApp</p>
+                                <img src="./img/rickMorty2.jpg" alt="">
+                                <a href="https://rick-morty-pm.herokuapp.com/"  target="_blank" class="visit-site">Visit site</a>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="project">
+                                <p>MEVN Stack WebApp</p>
+                                <img src="./img/both-phone.jpg" alt="">
+                                <a href="https://students-crud-mevnstack.herokuapp.com/"  target="_blank" class="visit-site">Visit site</a>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination a"></div>
 
-    </section>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev arrow"></div>
+                    <div class="swiper-button-next arrow"></div>
+                </div>
+            </div>
+        </section>
 
-    <section id="skills" class="skills">
-        <p class="title">SKILL SET</p>
-        <div class="tech-panel">
-            <div class="tech">
-                <i class="fab fa-html5 tech-icon html"></i>
-            </div>
-            <div class="tech">
-                <i class="fab fa-css3-alt tech-icon css"></i>
-            </div>
-            <div class="tech">
-                <i class="fab fa-js-square tech-icon js"></i>
-            </div>
-            <div class="tech">
-                <img src="./img/jee-3.svg" class="java" alt="">
-            </div>
-            <div class="tech">
-                <img src="./img/mongodb-icon-1.svg" class="mongo" alt="">
-            </div>
-            <div class="tech">
-                <img src="./img/vue-js-1.svg" class="vue" alt="">
-            </div>
-            <div class="tech">
-                <i class="fab fa-git-alt tech-icon git"></i>
-            </div>
-            <div class="tech">
-                <i class="fab fa-node-js tech-icon node"></i>
-            </div>
-            <div class="tech">
-                <i class="fab fa-sass tech-icon sass"></i>
-            </div>
-        </div>
-    </section>
+        <section class="contact">
+            <p class="title" id="contact">CONTACT</p>
+            <div class="social">
 
-    <section id="portfolio" class="portfolio">
-        <p class="title">PORTFOLIO</p>
-        <div class="projects">
-            <article class="project">
-                <p>Rick & Morty App</p>
-                <a href="https://rick-morty-pm.herokuapp.com/">
-                    <img src="./img/rickMorty2.jpg" alt="">
+                <div class="email">Click to copy my email!</div>
+
+                <a href="https://www.linkedin.com/in/pablomenor" target="_blank" class="linkedin">
+                    <img src="./img/linkedin-icon-2.svg" alt="" class="linkedin">
                 </a>
-            </article>
-            <article class="project">
-                <p>MEVN Stack App</p>
-                <a href="https://students-crud-mevnstack.herokuapp.com/">
-                    <img src="./img/both-phone.jpg" alt="">
-                </a>
-            </article>
-        </div>
-    </section>
+            </div>
+        </section>
+    </div>
 
-    <section class="contact">
-        <p class="title" id="contact">CONTACT</p>
-        <div class="social">
-
-            <div class="email">Click to copy my email!</div>
-
-            <a href="https://www.linkedin.com/in/pablomenor" target="_blank" class="linkedin">
-                <img src="./img/linkedin-icon-2.svg" alt="" class="linkedin">
-            </a>
-        </div>
-    </section>
     <footer>
         <p><i class="fab fa-github"></i>My GitHub <a href="https://github.com/pablo-menor" target="_blank">Pablo</a>
         </p>
     </footer>
 
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
+
 </body>
 
 </html>

@@ -104,27 +104,29 @@
         width: 70%;
     }
     .skills .tech-panel{
-        width: 75vw;
+        width: 900px;
+        /* background-color: aqua; */
         margin: auto;
         margin-top: 60px;
     }
     .java{
-        width: 35%;
+        width: 30%;
     }
     
     .mongo{
-        width: 48%;
+        width: 44%;
     }
     
     .vue{
-        width: 39%;
+        width: 29%;
     }
     .portfolio{
-        width: 90vw;
+        width: 100%;
 
     }
     .title{
         font-size: 2.2em;
+        margin: auto;
 
     }
     .contact .social{
@@ -137,6 +139,9 @@
     .contact .social .linkedin{
         width: 70px;
         margin-top: 20px;
+    }
+    .arrow::after{
+        font-size: 1.7rem;
     }
     /* footer{
         height: 100px;
@@ -154,6 +159,8 @@
   }
   @media screen and (min-width: 920px) {
   .home > div{
+      margin-top: 50px;
+      margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -186,10 +193,10 @@
     nav .nav-wrap  #sections {
         font-size: 1.3em;
     }
-    .portfolio .projects .project{
+    /* .portfolio .projects .project{
         width: 60%;
         margin-bottom: 35px;
-    }
+    } */
     .home{
 
         margin-top: 5vh;
@@ -223,19 +230,24 @@
         border-radius: 3px;
         letter-spacing: 1.2px;
     }
-    .portfolio .projects{
+    .arrow::after{
+        font-size: 2rem;
+    }
+}
+    /* .portfolio .projects{
         display: grid;
         margin: auto;
-        width: 95%;
+        width: 90%;
         margin-top: 100px;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
-    }
-    .portfolio .projects .project{
-        width: 100%;
+    } */
+     .portfolio .projects .project{
+        width: 45%;
         
-    }
-    .tech{
+    } 
+  
+    /* .tech{
         height: 150px;
         display: flex;
         align-items: center;
@@ -257,10 +269,10 @@
     }
     .portfolio .projects{
         margin-top: 50px;
-    }
+    } */
 
-  }
-
+  /* } */
+/* 
   @media screen and (min-width: 1200px) {
     
     .skills .tech-panel{
@@ -309,4 +321,4 @@
         margin-top: 90px;
     }
    
-  }
+  } */
